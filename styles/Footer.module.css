@@ -1,0 +1,52 @@
+.footer{
+    background-color: black;
+    width: 100%;
+    color: white;
+    padding: 50px 25%;
+}
+
+.footer .grid{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+
+    .footer{
+        padding: 50px 10%;
+    }
+}
+
+@media (max-width: 800px) {
+    .footer .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.footer .col{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.footer .colVar2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.footer .colVar2 > *{
+    margin: 5px 0;
+    color: gray;
+}
+
+.footer .col > *{
+    margin: 5px 0;
+}
+
+.footer h1, .footer p{
+    font-weight: 400;
+}
